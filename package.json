@@ -2,9 +2,9 @@
 	"name": "vite-project",
 	"version": "1.0.0-alpha",
 	"scripts": {
-		"start": "concurrently -k -n vite-dev,neu \"yarn:vite-dev\" \"neu run -- --url=http://127.0.0.1:5173/index.html --document-root=\"\\/./\"\"",
-	"build": "vite build --mode prod && neu build",
-		"preview": "vite build --mode prod && neu run -- --url=http://localhost:8080/index.html",
+		"start": "concurrently -k -n vite-dev,neu \"yarn:vite-dev\" \"neu run -- --port=8080 --url=http://127.0.0.1:5173/index.html --document-root=\"\\/./\" --window-enable-inspector=true\"",
+		"build": "vite build --mode prod && neu build",
+		"preview": "vite build --mode prod && neu run",
 		"vite-dev": "vite --mode dev",
 		"vite-preview": "vite preview"
 	},
