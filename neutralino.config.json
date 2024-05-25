@@ -63,7 +63,7 @@
 		"clientVersion": "3.4.0",
 	"frontendLibrary": {
 			"patchFile": "/index.html",
-			"devUrl": "http://127.0.0.1:5173"
+			"devUrl": "http://localhost:5173"
 		}
 	}
 }

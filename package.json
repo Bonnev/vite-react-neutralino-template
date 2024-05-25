@@ -2,10 +2,10 @@
 	"name": "vite-project",
 	"version": "1.0.0-alpha",
 	"scripts": {
-		"start": "concurrently -k -n vite-dev,neu \"yarn:vite-dev\" \"neu run -- --port=8080 --url=http://127.0.0.1:5173/index.html --document-root=\"\\/./\" --window-enable-inspector=true\"",
+		"start": "concurrently -k -n vite-dev,neu \"vite\" \"neu run -- --port=8080 --url=http://localhost:5173/index.html --document-root=\"\\/./\" --window-enable-inspector=true\"",
 		"build": "vite build --mode prod && neu build",
 		"preview": "vite build --mode prod && neu run",
-		"vite-dev": "vite --mode dev",
+		"vite-dev": "vite",
 		"vite-preview": "vite preview"
 	},
 	"dependencies": {
