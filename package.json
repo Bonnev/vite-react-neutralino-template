@@ -1,27 +1,30 @@
 {
 	"name": "vite-project",
 	"version": "1.0.0-alpha",
+	"type": "module",
 	"scripts": {
-		"start": "concurrently -k -n vite-dev,neu \"yarn:vite-dev\" \"neu run -- --port=8080 --url=http://127.0.0.1:5173/index.html --document-root=\"\\/./\" --window-enable-inspector=true\"",
-		"build": "vite build --mode prod && neu build",
-		"preview": "vite build --mode prod && neu run",
-		"vite-dev": "vite --mode dev",
-		"vite-preview": "vite preview"
+		"init": "neu update",
+		"start": "neu run -- --window-enable-inspector=true",
+		"build": "neu build",
+		"vite-dev": "vite",
+		"vite-build": "NODE_ENV=production vite build"
 	},
 	"dependencies": {
-		"moment": "^2.29.4",
+		"@neutralinojs/lib": "^5.1.0",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"vite-plugin-html-env": "^1.2.7"
+		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@neutralinojs/neu": "^9.3.1",
-		"@types/react": "^18.0.17",
-		"@types/react-dom": "^18.0.6",
-		"@vitejs/plugin-react": "^2.0.1",
-		"concurrently": "^7.3.0",
+		"@neutralinojs/neu": "^11.0.1",
+		"@types/react": "^18.2.0",
+		"@types/react-dom": "^18.2.0",
+		"@vitejs/plugin-react": "^4.2.1",
 		"eslint": "^8.23.0",
 		"eslint-plugin-react": "^7.31.4",
-		"vite": "^3.0.7"
+		"vite": "^5.2.0"
+	},
+	"engines": { 
+		"node": ">=20",
+		"npm": ">=10"
 	}
 }

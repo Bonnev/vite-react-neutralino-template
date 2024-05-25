@@ -2,9 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import reactLogo from '/react.svg';
 import neutralinoLogo from '/neutralino-logo.gif';
+import { filesystem } from '@neutralinojs/lib';
 import './App.css';
 
-Neutralino.filesystem.writeFile('./test.txt', 'random text');
+filesystem.writeFile('./test.txt', 'random text');
 
 function App() {
 	const [count, setCount] = useState(0);
