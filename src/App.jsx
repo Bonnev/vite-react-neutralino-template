@@ -32,7 +32,7 @@ function App() {
 					count is {count}
 				</button>
 				<p>
-					Editt <code>src/App.jsx</code> and save to test HMR within the browser
+					Edit <code>src/App.jsx</code> and save to test HMR within the browser
 				</p>
 			</div>
 			<p className="read-the-docs">
